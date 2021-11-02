@@ -55,7 +55,7 @@ request.get(csvUrl)
 csv()
 .fromFile(csvFilePath)
 .subscribe((json,lineNumber)=>{
-  return Promise((resolve,reject)=>{
+  return new Promise((resolve,reject)=>{
     // process the json line in asynchronous.
   })
 },onError, onComplete)
